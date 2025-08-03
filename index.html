@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VURN — децентрализованный токен TON</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-color: #6a11cb;
+      --accent-color: #ff416c;
+      --button-color: #ff4b2b;
+      --light-bg: #fefcea;
+      --light-bg-alt: #f1daff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, var(--light-bg), var(--light-bg-alt));
+      color: #1c1c1e;
+    }
+    header {
+      background: linear-gradient(135deg, var(--main-color), #2575fc);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--main-color);
+      border-bottom: 2px solid #dedede;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    p, li {
+      line-height: 1.6;
+    }
+    .roadmap ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .roadmap li {
+      background-color: #ffffffcc;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-left: 5px solid #4CAF50;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      backdrop-filter: blur(4px);
+      border-radius: 6px;
+    }
+    .buy-links a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(90deg, var(--accent-color), var(--button-color));
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: transform 0.2s, background 0.3s;
+    }
+    .buy-links a:hover {
+      background: linear-gradient(90deg, var(--button-color), var(--accent-color));
+      transform: scale(1.05);
+    }
+    .screenshots img {
+      max-width: 100%;
+      margin: 1rem 0;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .footer {
+      background-color: #0a0a23;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: linear-gradient(135deg, #1e1e2f, #1b1b1b);
+        color: #f5f5f5;
+      }
+      header, .footer {
+        background: linear-gradient(135deg, #000000, #1c1c1c);
+      }
+      .roadmap li {
+        background-color: #2e2e3f99;
+      }
+      h2 {
+        color: #e2e2e2;
+        border-color: #444;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VURN — Сила Децентрализации в TON</h1>
+    <p>Финансовая свобода начинается здесь</p>
+  </header>
+
+  <section>
+    <h2>О монете</h2>
+    <p><strong>VURN</strong> — это децентрализованный токен в блокчейне <strong>TON</strong>, созданный для возвращения контроля над финансами пользователям. Монета развивается на принципах честности, открытого сообщества и прозрачности. Контракт: <code>[вставь адрес]</code>.</p>
+  </section>
+
+  <section class="roadmap">
+    <h2>Дорожная карта</h2>
+    <ul>
+      <li><strong>Q3 2025:</strong> Запуск токена и создание пула ликвидности</li>
+      <li><strong>Q4 2025:</strong> Листинг на DEX и маркетинговая кампания</li>
+      <li><strong>Q1 2026:</strong> Партнёрства и внедрение утилити</li>
+      <li><strong>Q2 2026:</strong> DAO и децентрализованное голосование</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Зачем нужна VURN?</h2>
+    <p>VURN — это способ вернуть силу в руки сообщества. Без централизации, без компромиссов, с полной свободой действий и доступа. Это инструмент, который поддерживает реальные инициативы, свободу слова и независимость в Web3.</p>
+  </section>
+
+  <section class="buy-links">
+    <h2>Где купить</h2>
+    <a href="https://dedust.io/pools/EQBvLARWhyH1cihbus3WyBbSvXbx0N6SLVlQ4aNKjNE9SqjL" target="_blank">Купить на DeDust.io</a>
+    <a href="https://tonkeeper.com/" target="_blank">Установить Tonkeeper</a>
+  </section>
+
+  <section class="screenshots">
+    <h2>Инструкция по покупке</h2>
+    <ol>
+      <li>Установи кошелёк <a href="https://tonkeeper.com/" target="_blank">Tonkeeper</a></li>
+      <li>Пополни его монетами TON</li>
+      <li>Перейди на <a href="https://dedust.io" target="_blank">DeDust.io</a> и открой пул VURN</li>
+      <li>Нажми кнопку "Swap" (см. скриншот ниже)</li>
+    </ol>
+    <img src="swap_instruction.png" alt="Инструкция со стрелкой на Swap">
+    <p>После обмена токены VURN поступят к тебе в кошелёк TON.</p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 VURN Token. Все права защищены.</p>
+  </footer>
+</body>
+</html>
